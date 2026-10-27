@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173c32">
+    <meta name="description" content="Khám phá món ngon và hương vị thân quen tại Cơm nhà.">
+    <title>Chi tiết món — Cơm nhà</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topline">
+      <p>Món ngon ba miền · Bữa cơm Việt thân quen</p>
+      <a href="tel:1900234550">Đặt bàn: 1900 234 550</a>
+    </div>
+
+    <header class="site-header" id="dau-trang">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="Cơm nhà — về trang chủ">
+          <span class="brand-mark" aria-hidden="true">CN</span>
+          <span class="brand-name">CƠM NHÀ<small>VỊ NGON BA MIỀN</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+          <a href="index.html#cau-chuyen">Câu chuyện</a>
+          <a href="gioi-thieu.html">Giới thiệu</a>
+          <a href="index.html#thuc-don">Thực đơn</a>
+          <a href="index.html#khong-gian">Không gian</a>
+          <a href="index.html#chi-nhanh">Chi nhánh</a>
+          <a class="nav-cta" href="index.html#dat-ban">Đặt bàn <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="detail-page">
+      <div class="page-width">
+        <a class="text-link detail-back" href="index.html#thuc-don"><span aria-hidden="true">←</span> Quay lại thực đơn</a>
+        <section class="detail-layout" hidden aria-live="polite">
+          <div class="detail-image-wrap">
+            <img class="detail-image" src="" alt="">
+            <span class="detail-kicker">TỪ BẾP CƠM NHÀ</span>
+          </div>
+          <div class="detail-copy">
+            <p class="eyebrow">HƯƠNG VỊ THÂN QUEN</p>
+            <h1 class="detail-title"></h1>
+            <div class="detail-specs" aria-label="Thông tin món ăn"></div>
+            <p class="detail-description"></p>
+            <p class="detail-price"></p>
+            <a class="button button-dark" href="tel:1900234550">Gọi đặt món <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+        <section class="detail-not-found" hidden>
+          <p class="eyebrow">KHÔNG TÌM THẤY MÓN</p>
+          <h1>Món ngon này chưa có trong thực đơn.</h1>
+          <p>Quay lại thực đơn để khám phá những món khác nhé.</p>
+          <a class="button button-dark" href="index.html#thuc-don">Xem thực đơn <span aria-hidden="true">↗</span></a>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">CN</span><span class="brand-name">CƠM NHÀ<small>VỊ NGON BA MIỀN</small></span></a>
+        <p>Món ngon ba miền.<br>Bữa cơm Việt thân quen.</p>
+        <div class="footer-links"><a href="index.html#cau-chuyen">Câu chuyện</a><a href="index.html#thuc-don">Thực đơn</a><a href="index.html#chi-nhanh">Chi nhánh</a><a href="https://www.facebook.com/trongcom" target="_blank" rel="noreferrer">Facebook ↗</a></div>
+        <span class="copyright">© 2026 Cơm nhà</span>
+      </div>
+    </footer>
+    <script src="detail.js"></script>
+  </body>
+</html>

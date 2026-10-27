@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#173c32">
+    <meta name="description" content="Tìm món ngon ba miền tại Cơm nhà.">
+    <title>Tìm món ăn — Cơm nhà</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="topline">
+      <p>Món ngon ba miền · Bữa cơm Việt thân quen</p>
+      <a href="tel:1900234550">Đặt bàn: 1900 234 550</a>
+    </div>
+
+    <header class="site-header" id="dau-trang">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="Cơm nhà — về trang chủ">
+          <span class="brand-mark" aria-hidden="true">CN</span>
+          <span class="brand-name">CƠM NHÀ<small>VỊ NGON BA MIỀN</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+          <a href="index.html#cau-chuyen">Câu chuyện</a>
+          <a href="gioi-thieu.html">Giới thiệu</a>
+          <a href="index.html#thuc-don">Thực đơn</a>
+          <a href="index.html#khong-gian">Không gian</a>
+          <a href="index.html#chi-nhanh">Chi nhánh</a>
+          <a class="nav-cta" href="index.html#dat-ban">Đặt bàn <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="search-page">
+      <section class="search-intro">
+        <div class="page-width">
+          <p class="eyebrow">TÌM KIẾM MÓN NGON</p>
+          <h1>Tìm vị <em>thân quen.</em></h1>
+          <p class="search-description">Nhập tên món ăn bạn đang nhớ, Cơm nhà sẽ tìm giúp bạn.</p>
+          <form class="search-form search-page-form" action="search.html" method="get" role="search">
+            <label class="visually-hidden" for="results-search">Tìm món ăn</label>
+            <input id="results-search" type="search" name="q" placeholder="Ví dụ: cơm gà, trà đào...">
+            <input id="results-category" type="hidden" name="category" value="">
+            <button type="submit">Tìm <span aria-hidden="true">↗</span></button>
+          </form>
+        </div>
+      </section>
+
+      <section class="search-results section-pad" aria-labelledby="results-title">
+        <div class="page-width">
+          <div class="results-heading">
+            <h2 id="results-title">Kết quả tìm kiếm</h2>
+            <p class="search-summary" aria-live="polite"></p>
+          </div>
+          <div class="menu-tabs search-tabs" role="group" aria-label="Lọc danh mục món ăn">
+            <button class="menu-tab" type="button" data-filter="all" aria-pressed="false">Tất cả</button>
+            <button class="menu-tab" type="button" data-filter="rice" aria-pressed="false">Cơm nhà</button>
+            <button class="menu-tab" type="button" data-filter="soup" aria-pressed="false">Món nước</button>
+            <button class="menu-tab" type="button" data-filter="drink" aria-pressed="false">Thức uống</button>
+          </div>
+          <div class="dish-grid search-dish-grid">
+            <a class="dish-card" data-search-item data-category="rice" data-name="Cơm đùi gà nướng" href="detail.html?id=com-dui-ga-nuong">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85" alt="Cơm đùi gà nướng và rau củ" loading="lazy"><span class="dish-number">01</span></div>
+              <div class="dish-info"><div><h3>Cơm đùi gà nướng</h3><div class="dish-specs"><span>Miền Nam</span><span>Món chính</span></div></div><span class="dish-price">99.000đ</span></div>
+            </a>
+            <a class="dish-card" data-search-item data-category="rice" data-name="Gỏi rau củ đậu hũ" href="detail.html?id=goi-rau-cu-dau-hu">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Đĩa rau xanh tươi ngon" loading="lazy"><span class="dish-number">02</span></div>
+              <div class="dish-info"><div><h3>Gỏi rau củ đậu hũ</h3><div class="dish-specs"><span>Ba miền</span><span>Món khai vị</span></div></div><span class="dish-price">85.000đ</span></div>
+            </a>
+            <a class="dish-card" data-search-item data-category="soup" data-name="Mì gà quay nước" href="detail.html?id=mi-ga-quay-nuoc">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=900&q=85" alt="Tô mì nóng hổi với rau thơm" loading="lazy"><span class="dish-number">03</span></div>
+              <div class="dish-info"><div><h3>Mì gà quay nước</h3><div class="dish-specs"><span>Miền Nam</span><span>Món nước</span></div></div><span class="dish-price">109.000đ</span></div>
+            </a>
+            <a class="dish-card" data-search-item data-category="rice" data-name="Cơm chiên hải sản" href="detail.html?id=com-chien-hai-san">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85" alt="Cơm chiên nóng hổi với nguyên liệu tươi" loading="lazy"><span class="dish-number">04</span></div>
+              <div class="dish-info"><div><h3>Cơm chiên hải sản</h3><div class="dish-specs"><span>Miền Nam</span><span>Cơm nhà</span></div></div><span class="dish-price">199.000đ</span></div>
+            </a>
+            <a class="dish-card" data-search-item data-category="soup" data-name="Bánh canh tôm càng" href="detail.html?id=banh-canh-tom-cang">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Món canh rau củ nóng sốt" loading="lazy"><span class="dish-number">05</span></div>
+              <div class="dish-info"><div><h3>Bánh canh tôm càng</h3><div class="dish-specs"><span>Miền Trung</span><span>Món nước</span></div></div><span class="dish-price">95.000đ</span></div>
+            </a>
+            <a class="dish-card" data-search-item data-category="drink" data-name="Trà đào cam chanh" href="detail.html?id=tra-dao-cam-chanh">
+              <div class="dish-image"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=85" alt="Trà trái cây tươi mát" loading="lazy"><span class="dish-number">06</span></div>
+              <div class="dish-info"><div><h3>Trà đào cam chanh</h3><div class="dish-specs"><span>Miền Nam</span><span>Thức uống</span></div></div><span class="dish-price">35.000đ</span></div>
+            </a>
+          </div>
+          <p class="no-results" hidden>Không tìm thấy kết quả phù hợp. Hãy thử bỏ bớt điều kiện tìm kiếm.</p>
+          <a class="text-link back-home" href="index.html">Về trang chủ <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">CN</span><span class="brand-name">CƠM NHÀ<small>VỊ NGON BA MIỀN</small></span></a>
+        <p>Món ngon ba miền.<br>Bữa cơm Việt thân quen.</p>
+        <div class="footer-links"><a href="index.html#cau-chuyen">Câu chuyện</a><a href="index.html#thuc-don">Thực đơn</a><a href="index.html#chi-nhanh">Chi nhánh</a><a href="https://www.facebook.com/trongcom" target="_blank" rel="noreferrer">Facebook ↗</a></div>
+        <span class="copyright">© 2026 Cơm nhà</span>
+      </div>
+    </footer>
+    <script src="search.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(rm *)",
+      "Bash(del *)",
+      "Bash(Remove-Item *)",
+      "Bash(git push *)",
+      "Bash(npm publish *)"
+    ]
+  }
+}
